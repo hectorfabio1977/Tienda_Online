@@ -1,0 +1,43 @@
+/* Estilos básicos para el menú */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #333;
+    color: #e21515;
+    padding: 10px 20px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    position: relative; /* Establece posición relativa para el menú principal */
+}
+li {
+    display: inline;
+    margin-right: 20px;
+}
+li a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Estilos para los submenús */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    padding: 10px;
+    z-index: 1;
+    top: 100%; /* Colocar el submenú debajo del menú principal */
+    left: 0; /* Alinear el submenú con el menú principal */
+}
+li:hover .submenu {
+    display: block;
+}
+.submenu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0;
+}

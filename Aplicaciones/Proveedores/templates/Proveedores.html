@@ -1,0 +1,13 @@
+{% extends 'Base.html' %}
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        <!--{{ form.as_p }}   Esto renderizará el formulario con sus campos como párrafos -->
+        <!--{{ form.as_table }} para renderizar los campos en una tabla-->
+        {{ form.as_ul }}<!--para renderizarlos como una lista no ordenada.-->
+        <button type="submit">Enviar</button>
+
+{% endblock %}
+
+    
